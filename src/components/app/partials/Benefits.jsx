@@ -1,7 +1,7 @@
-import PageSection from "../pageElement/pageSecion"
-import SectionTitle from "../pageElement/SectionTitle"
+import PageSection from "../../ui/pageElement/PageSection"
+import SectionTitle from "../../ui/pageElement/PageSection"
 import { benefits } from "../../../assets/js/data"
-import IconText from "../iconText/IconText"
+import IconText from "../../ui/typography/IconText"
 import Phone from "/Phone.svg"
 import "../../../assets/style/benefits.css"
 

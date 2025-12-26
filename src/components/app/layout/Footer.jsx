@@ -1,7 +1,7 @@
 import AppStore from "/AppStore.svg"
 import GooglePlay from "/GooglePlay.svg"
-import { urlClick } from "../../assets/js/script"
-import "../../assets/style/footer.css"
+import { urlClick } from "../../../assets/js/script"
+import "../../../assets/style/footer.css"
 
 function Footer() {
     return (

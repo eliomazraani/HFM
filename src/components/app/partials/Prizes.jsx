@@ -1,8 +1,9 @@
-import PageSection from "../pageElement/pageSecion"
-import SectionTitle from "../pageElement/SectionTitle"
+import PageSection from "../../ui/pageElement/PageSection"
+import SectionTitle from "../../ui/pageElement/PageSection"
 import { prizes } from "../../../assets/js/data"
-import PrizeCard from "../prizes/PrizeCard"
-import SubmitBtn from "../submitButton/SubmitBtn"
+import CardContainer from "../../ui/card/CardContainer"
+import PrizeCard from "../PrizeCard"
+import SubmitBtn from "../../ui/button/SubmitBtn"
 import "../../../assets/style/prizes.css"
 
 function Prizes() {
@@ -13,7 +14,7 @@ function Prizes() {
                     <SectionTitle title="Prizes" />
                     <div className="boxCards">
                         {prizes.map((prize, index) => (
-                            <PrizeCard key={index} imgSrc={`/Medal${index+1}.svg`} price={prize.price} tag={prize.tag}/>
+                            <CardContainer as={PrizeCard} key={index} imgSrc={`/Medal${index+1}.svg`} price={prize.price} tag={prize.tag} />
                         ))}
                     </div>
                     <SubmitBtn show scroll/>

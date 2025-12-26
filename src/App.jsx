@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router"
-import Navigation from "./components/app/Navigation"
+import Navigation from "./components/app/layout/Navigation"
 import HomePage from "./pages/HomePage"
-import Footer from "./components/app/Footer"
+import Footer from "./components/app/layout/Footer"
 
 function App() {
   return (

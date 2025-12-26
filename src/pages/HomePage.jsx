@@ -1,9 +1,9 @@
-import Form from "../components/ui/pageSection/Form"
+import Form from "../components/app/partials/Form"
 import FormBG from "/FormBG.png"
-import Benefit from "../components/ui/pageSection/Benefits"
-import Prizes from "../components/ui/pageSection/Prizes"
-import List from "../components/ui/pageSection/List"
-import FAQ from "../components/ui/pageSection/FAQ"
+import Benefit from "../components/app/partials/Benefits"
+import Prizes from "../components/app/partials/Prizes"
+import List from "../components/app/partials/List"
+import FAQ from "../components/app/partials/FAQ"
 
 function HomePage() {
     return (

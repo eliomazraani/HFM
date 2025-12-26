@@ -1,9 +1,10 @@
-import PageSection from "../pageElement/pageSecion"
-import SectionTitle from "../pageElement/SectionTitle"
+import PageSection from "../../ui/pageElement/PageSection"
+import SectionTitle from "../../ui/pageElement/PageSection"
 import { prizes, list } from "../../../assets/js/data"
-import Voucher from "../vouchers/Voucher"
-import RowTable from "../table/RowTable"
-import SubmitBtn from "../submitButton/SubmitBtn"
+import CardContainer from "../../ui/card/CardContainer"
+import VoucherCard from "../VoucherCard"
+import TableRow from "../../ui/table/TableRow"
+import SubmitBtn from "../../ui/button/SubmitBtn"
 import "../../../assets/style/list.css"
 
 function List() {
@@ -17,16 +18,16 @@ function List() {
                     <div className="listWindow">
                         <div className="winnerCard">
                             {sortedList.slice(0,3).map((entry, index) => (
-                                <Voucher key={index} imgSrc={`/Trophy${index+1}.svg`} name={entry.name} id={entry.id} prize={prizes[index].price} />
+                                <CardContainer as={VoucherCard} key={index} imgSrc={`/Trophy${index+1}.svg`} name={entry.name} id={entry.id} gain={entry.gain} prize={prizes[index].price} />
                             ))}
                         </div>
                         <div className="rankingList">
                             <p className="title">Aliquam lorem ant</p>
                             <div className="table">
-                                <RowTable cls="tableHead" name="Name" gain="Gain" />
+                                <TableRow cls="tableHead" name="Name" gain="Gain" />
                                 <div className="tableBody">
                                     {sortedList.slice(3).map((row, index) => (
-                                        <RowTable key={index} name={row.name} gain={`${row.gain}%`} />
+                                        <TableRow key={index} name={row.name} gain={`${row.gain}%`} />
                                     ))}
                                 </div>
                             </div>

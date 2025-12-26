@@ -1,11 +1,11 @@
 import BR from "/BR.svg"
 import DownloadApp from "/DownloadApp.svg"
-import { urlClick } from "../../assets/js/script"
+import { urlClick } from "../../../assets/js/script"
 import Logo from "/Logo.svg"
 import { Navbar, Nav, Drawer, Menu, MenuItem } from 'rsuite'
 import { Link } from "react-router-dom"
-import RegistrationBtns from "../ui/registrationButtons/RegistrationBtns"
-import "../../assets/style/navigation.css"
+import RegistrationBtns from "../../ui/button/RegistrationBtns"
+import "../../../assets/style/navigation.css"
 
 function Navigation() {
     function scrollToFooter() {

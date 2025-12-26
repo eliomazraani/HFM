@@ -1,8 +1,8 @@
-import PageSection from '../pageElement/pageSecion'
-import SectionTitle from '../pageElement/SectionTitle'
-import { faq } from '../../../assets/js/data'
-import { Accordion } from 'rsuite'
-import 'rsuite/dist/rsuite.min.css'
+import PageSection from "../../ui/pageElement/PageSection"
+import SectionTitle from "../../ui/pageElement/PageSection"
+import { faq } from "../../../assets/js/data"
+import { Accordion } from "rsuite"
+import "rsuite/dist/rsuite.min.css"
 import "../../../assets/style/faq.css"
 
 function FAQ() {

@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { useFormik } from "formik"
 import { Form, SelectPicker, Checkbox } from "rsuite"
-import PageSection from "../pageElement/pageSecion"
-import SubmitBtn from "../submitButton/SubmitBtn"
+import PageSection from "../../ui/pageElement/PageSection"
+import SubmitBtn from "../../ui/button/SubmitBtn"
 import "../../../assets/style/form.css"
 
 function FormEl({background, titleSpan, title, formTitle}) {
