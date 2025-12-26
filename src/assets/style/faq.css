@@ -1,0 +1,58 @@
+.faqElement {
+  background-color: #F4F4F4;
+  padding: 120px 20px;
+}
+.faqElement .rs-panel-group .rs-panel-collapsible::before {
+  border-color: #E4E4E4;
+  border-radius: 5px;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+}
+.faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-header {
+  padding: 0;
+}
+.faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-header button {
+  padding: 19px 55px 19px 70px;
+}
+.faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-header button .rs-panel-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-body {
+  padding: 19px 55px 19px 70px;
+}
+.faqElement .rs-panel-group .rs-panel-collapsible.rs-panel-in .rs-panel-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-top: 2px #B9B7B7 solid;
+  border-radius: 5px;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+}
+@media (max-width: 790px) {
+  .faqElement {
+    padding: 60px 20px;
+  }
+  .faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-header button {
+    padding: 20px 40px;
+  }
+  .faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-body {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 450px) {
+  .faqElement {
+    padding: 50px 20px;
+  }
+  .faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-header button {
+    padding: 20px;
+  }
+  .faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-header button .rs-panel-title {
+    font-size: 16px;
+  }
+  .faqElement .rs-panel-group .rs-panel-collapsible .rs-panel-body {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=faq.css.map */

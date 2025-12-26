@@ -1,0 +1,96 @@
+@import "./mixins";
+
+.benefitsElement {
+    background-color: #F4F4F4;
+    padding: 120px 20px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .gridView {
+            display: grid;
+            grid-template-columns: 178px auto 178px;
+            grid-template-areas:
+                "benefit1 midImg benefit3"
+                "benefit2 midImg benefit4";
+            column-gap: 55px;
+
+            .benefit {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+
+                img {
+                    max-height: 90px;
+                }
+                
+                &.benefit1 { 
+                    grid-area: benefit1;
+                }
+    
+                &.benefit2 {
+                    grid-area: benefit2;
+                }
+    
+                &.benefit3 {
+                    grid-area: benefit3;
+                }
+    
+                &.benefit4 {
+                    grid-area: benefit4;
+                }
+            }
+
+            .midImg      {
+                grid-area: midImg;
+                width: 100%;
+            }
+        }
+    }
+
+    @include tabletScreen {
+        padding: 60px 20px 0;
+
+        .wrap {
+            .gridView {
+                grid-template-columns: auto;
+                grid-template-areas:
+                    "benefit1 benefit2 benefit3 benefit4"
+                    ". midImg midImg .";
+                gap: 30px 15px;
+            }
+        }
+    }
+
+    @include mobileScreen {
+        padding: 50px 20px 0;
+
+        .wrap {
+            .gridView {
+                grid-template-columns: 100px 100px;
+                grid-template-areas:
+                    "benefit1 benefit2"
+                    "benefit3 benefit4"
+                    "midImg midImg";
+                column-gap: 25px;
+
+                .benefit {
+                    font-size: 14px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

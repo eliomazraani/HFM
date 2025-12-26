@@ -1,0 +1,76 @@
+footer {
+  padding: 50px 20px 115px;
+  background-color: #161616;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+footer .wrap {
+  display: flex;
+  gap: 75px;
+}
+footer .wrap .contactBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+footer .wrap .contactBlock .findUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+}
+footer .wrap .contactBlock .findUs .socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+footer .wrap .contactBlock .findUs .socialMedia a {
+  color: #999999;
+  cursor: pointer;
+}
+footer .wrap .contactBlock .findUs .socialMedia a:hover {
+  color: #F4F4F4;
+}
+footer .wrap .contactBlock .downloadApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+}
+footer .wrap .contactBlock .downloadApp .stores {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+footer .wrap .contactBlock .downloadApp .stores img {
+  cursor: pointer;
+}
+footer .wrap .riskBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .wrap .riskBlock .disclaimer {
+  color: #999999;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+}
+@media (max-width: 790px) {
+  footer {
+    padding: 60px 20px;
+  }
+  footer .wrap {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+}
+@media (max-width: 450px) {
+  footer {
+    padding: 50px 20px;
+  }
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,275 @@
+@import "./mixins";
+
+.listElement {
+    background-color: #F4F4F4;
+    padding: 120px 20px 0;
+
+    .wrap {
+
+        .listWindow {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            margin-bottom: 80px;
+
+            .winnerCard {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .voucher {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+                    min-width: 600px;
+                    background-color: #FFFFFF;
+                    border-radius: 20px;
+                    padding: 30px 35px;
+                    overflow: hidden;
+
+                    .trophy {
+                        max-width: 100px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .details {
+                        font-size: 18px;
+
+                        .date {
+                            margin-bottom: 25px;
+                            font-weight: 700;
+                            background: linear-gradient(90deg, #FCD678 0%, #FCD678 0.01%, #BC8C2F 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            color: transparent;
+                        }
+
+                        .name {
+                            font-weight: 400;
+                            text-transform: uppercase;
+                        }
+
+                        .id {
+                            font-weight: 400;
+                            color: #A8A8A8;
+                        }
+
+                        .gain {
+                            margin-top: 25px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+
+                            span {
+                                color: #CD0511;
+                            }
+                        }
+                    }
+
+                    .ribbon { 
+                        width: 170px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 14%;
+                        right: -6%;
+                        transform: rotate(45deg);
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: white;
+                        background: linear-gradient(90deg, #FCD678 0%, #FCD678 0.01%, #BC8C2F 100%);
+                    }
+                }
+            }
+
+            .rankingList {
+                width: 100%;
+
+                .title {
+                    font-size: 25px;
+                    font-weight: 700;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    margin-bottom: 50px;
+                }
+
+                .table {
+                    font-size: 16px;
+                    line-height: 50px;
+                    max-height: 560px;
+                    overflow: scroll;
+                    scrollbar-width: thin;
+
+                    .row {
+                        display: flex;
+                        
+                        .nameCol {
+                            width: 75%;
+                            color: #161616;
+                        }
+                        
+                        .gainCol {
+                            width: 25%;
+                            font-weight: 700;
+                        }
+                        
+                        &:not(:last-of-type) {
+                            border-bottom: 1px #DEDEDE solid;
+                        }
+
+                        &.tableHead {
+                            font-weight: 700;
+                            color: #CD0511;
+                            position: sticky;
+                            top: 0;
+                            background: #F4F4F4;
+                            z-index: 1;
+
+                            .nameCol {
+                                color: #CD0511;
+                            }
+                        }
+                    }
+                }
+
+                .note {
+                    margin-top: 22px;
+                    color: #A8A8A8;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 100%;
+                }
+            }
+        }
+    }
+
+    @include desktopScreen {
+        .wrap {
+
+            .listWindow {
+
+                .winnerCard {
+
+                    .voucher {
+                        min-width: 450px;
+
+                        .ribbon {
+                            right: -8%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include laptopScreen {
+        .wrap {
+
+            .listWindow {
+
+                .winnerCard {
+
+                    .voucher {
+                        min-width: 350px;
+
+                        .ribbon {
+                            right: -10%;
+                        }
+                    }
+                }
+
+                .rankingList {
+
+                    .title {
+                        font-size: 20px;
+                    }
+
+                    .table {
+                        font-size: 14px;
+                        line-height: 50px;
+                    }
+
+                    .note {
+                        margin-top: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include tabletScreen {
+        padding: 60px 20px;
+
+        .wrap {
+
+            .listWindow {
+                flex-direction: column;
+                margin-bottom: 40px;
+                gap: 40px;
+
+                .winnerCard {
+                    gap: 15px;
+
+                    .voucher {
+                        min-width: unset;
+
+                        .ribbon {
+                            right: -7%;
+                        }
+                    }
+                }
+
+                .rankingList {
+
+                    .title {
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include mobileScreen {
+        padding: 50px 20px;
+
+        .wrap {
+
+            .listWindow {
+
+                .winnerCard {
+
+                    .voucher {
+                        gap: 20px;
+
+                        .trophy {
+                            max-width: 75px;
+                        }
+
+                        .details {
+                            font-size: 14px;
+
+                            .date {
+                                margin-bottom: 10px;
+                                max-width: 100px;
+                            }
+
+                            .gain {
+                                margin-top: 10px;
+                            }
+                        }
+
+                        .ribbon {
+                            right: -14%;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

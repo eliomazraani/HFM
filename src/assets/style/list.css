@@ -1,0 +1,196 @@
+.listElement {
+  background-color: #F4F4F4;
+  padding: 120px 20px 0;
+}
+.listElement .wrap .listWindow {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-bottom: 80px;
+}
+.listElement .wrap .listWindow .winnerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.listElement .wrap .listWindow .winnerCard .voucher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  min-width: 600px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 30px 35px;
+  overflow: hidden;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .trophy {
+  max-width: 100px;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .trophy img {
+  width: 100%;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .details {
+  font-size: 18px;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .details .date {
+  margin-bottom: 25px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #FCD678 0%, #FCD678 0.01%, #BC8C2F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .details .name {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .details .id {
+  font-weight: 400;
+  color: #A8A8A8;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .details .gain {
+  margin-top: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .details .gain span {
+  color: #CD0511;
+}
+.listElement .wrap .listWindow .winnerCard .voucher .ribbon {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 14%;
+  right: -6%;
+  transform: rotate(45deg);
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, #FCD678 0%, #FCD678 0.01%, #BC8C2F 100%);
+}
+.listElement .wrap .listWindow .rankingList {
+  width: 100%;
+}
+.listElement .wrap .listWindow .rankingList .title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.listElement .wrap .listWindow .rankingList .table {
+  font-size: 16px;
+  line-height: 50px;
+  max-height: 560px;
+  overflow: scroll;
+  scrollbar-width: thin;
+}
+.listElement .wrap .listWindow .rankingList .table .row {
+  display: flex;
+}
+.listElement .wrap .listWindow .rankingList .table .row .nameCol {
+  width: 75%;
+  color: #161616;
+}
+.listElement .wrap .listWindow .rankingList .table .row .gainCol {
+  width: 25%;
+  font-weight: 700;
+}
+.listElement .wrap .listWindow .rankingList .table .row:not(:last-of-type) {
+  border-bottom: 1px #DEDEDE solid;
+}
+.listElement .wrap .listWindow .rankingList .table .row.tableHead {
+  font-weight: 700;
+  color: #CD0511;
+  position: sticky;
+  top: 0;
+  background: #F4F4F4;
+  z-index: 1;
+}
+.listElement .wrap .listWindow .rankingList .table .row.tableHead .nameCol {
+  color: #CD0511;
+}
+.listElement .wrap .listWindow .rankingList .note {
+  margin-top: 22px;
+  color: #A8A8A8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+}
+@media (max-width: 1075px) {
+  .listElement .wrap .listWindow .winnerCard .voucher {
+    min-width: 450px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher .ribbon {
+    right: -8%;
+  }
+}
+@media (max-width: 991px) {
+  .listElement .wrap .listWindow .winnerCard .voucher {
+    min-width: 350px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher .ribbon {
+    right: -10%;
+  }
+  .listElement .wrap .listWindow .rankingList .title {
+    font-size: 20px;
+  }
+  .listElement .wrap .listWindow .rankingList .table {
+    font-size: 14px;
+    line-height: 50px;
+  }
+  .listElement .wrap .listWindow .rankingList .note {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 790px) {
+  .listElement {
+    padding: 60px 20px;
+  }
+  .listElement .wrap .listWindow {
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 40px;
+  }
+  .listElement .wrap .listWindow .winnerCard {
+    gap: 15px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher {
+    min-width: unset;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher .ribbon {
+    right: -7%;
+  }
+  .listElement .wrap .listWindow .rankingList .title {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 450px) {
+  .listElement {
+    padding: 50px 20px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher {
+    gap: 20px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher .trophy {
+    max-width: 75px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher .details {
+    font-size: 14px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher .details .date {
+    margin-bottom: 10px;
+    max-width: 100px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher .details .gain {
+    margin-top: 10px;
+  }
+  .listElement .wrap .listWindow .winnerCard .voucher .ribbon {
+    right: -14%;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=list.css.map */
